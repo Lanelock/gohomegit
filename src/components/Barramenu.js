@@ -13,7 +13,7 @@ class Barramenu extends PureComponent {
         return (
             <div>
                 Este es la barra de menus
-                aqui es el body
+            
             </div>
             
         )
