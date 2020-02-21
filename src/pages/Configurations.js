@@ -1,23 +1,23 @@
 import React, { Component } from 'react'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
 
-class Home extends Component {
+class Configurations extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-            
+
         }
     }
 
     render() {
         return (
             <div>
-               
+                Configuraciones
+
             </div>
+
         )
     }
 }
 
-export default Home;
+export default Configurations
