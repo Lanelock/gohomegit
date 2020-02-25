@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Footer extends Component {
+class Terrenos extends Component {
     constructor(props) {
         super(props)
 
@@ -12,11 +12,12 @@ class Footer extends Component {
     render() {
         return (
             <div>
-                Pie de pagina
+                Terrenos
+
             </div>
 
         )
     }
 }
 
-export default Footer
+export default Terrenos

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Configurations extends Component {
+class Remodelaciones extends Component {
     constructor(props) {
         super(props)
 
@@ -12,7 +12,7 @@ class Configurations extends Component {
     render() {
         return (
             <div>
-                Configuraciones
+                Remodelaciones
 
             </div>
 
@@ -20,4 +20,4 @@ class Configurations extends Component {
     }
 }
 
-export default Configurations
+export default Remodelaciones

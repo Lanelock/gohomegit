@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
 
 class Home extends Component {
     constructor(props) {
@@ -14,7 +12,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-               
+               Pagina principal
             </div>
         )
     }
