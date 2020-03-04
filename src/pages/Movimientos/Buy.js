@@ -10,10 +10,45 @@ class Buys extends Component {
     }
 
     render() {
+        const ID = [1];
+        const Clientes = ['Leo'];
+        const NumID = ID.map((id) =>
+            <tr key={ID.toString()}>{id}</tr>);
+
+        const DatosClientes = Clientes.map((name) =>
+            <tr key={Clientes.toString()}>{name}</tr>);
         return (
             <div>
-                Compras
-
+                <div class="container">
+                    <table className="table table-sucess mt-1">
+                        <thead className="thead-light">
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Cliente</th>
+                                <th scope="col">Tipo</th>
+                                <th scope="col">Direccion</th>
+                                <th scope="col">Correo</th>
+                                <th scope="col">Telefono</th>
+                                <th scope="col">Descripcion</th>
+                                <th scope="col">Costo</th>
+                                <th scope="col">Cancelación</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">{NumID}</th>
+                                <td>{DatosClientes}</td>
+                                <td>Remodelacion</td>
+                                <td>Ave.Doc.Manuel Velazcos Suarez</td>
+                                <td>Leo.cm.04.07@gmail.com</td>
+                                <td>9161381271</td>
+                                <td><button type="button" className="btn btn-success fa fa-align-left"></button></td>
+                                <td>$2500 MENSUALES</td>
+                                <td><button type="button" className="btn btn-success fa fa-ban"></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
         )
