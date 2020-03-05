@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 import $ from 'jquery';
 import Popper from 'popper.js';

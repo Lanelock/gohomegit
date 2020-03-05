@@ -12,6 +12,7 @@ import Notificaciónes from '../pages/Notificaciónes'
 import Usuarios from '../pages/Usuario'
 
 
+
 class Header extends Component {
     constructor(props) {
         super(props)
@@ -69,7 +70,7 @@ class Header extends Component {
                                             </div>
                                         </div>
 
-
+                                        
 
                                         <div className="btn-group dropright">
                                             <i class="fas fa-cash-register"></i>
