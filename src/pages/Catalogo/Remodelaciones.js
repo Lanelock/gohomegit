@@ -10,20 +10,15 @@ class Remodelaciones extends Component {
     }
 
     render() {
-        const ID = [1];
-        const Clientes = ['Leo'];
-
-        //key={Number.toString() para especificar bien el mapeo de datos.
-        const NumID = ID.map((id) =>
-            <tr key={ID.toString()}>{id}</tr>);
-
-        const DatosClientes = Clientes.map((name) =>
-            <tr key={Clientes.toString()}>{name}</tr>);
         return (
             <div>
+                <form className="form-inline mt-3">
+                    <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Buscar</button>
+                </form>
                 <div class="container">
-                    <table className="table mt-1">
-                        <thead className="thead-dark">
+                    <table className="table table-sucess mt-1">
+                        <thead className="thead-light">
                             <tr>
                                 <th scope="col">ID</th>
                                 <th scope="col">Cliente</th>
@@ -38,15 +33,15 @@ class Remodelaciones extends Component {
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">{NumID}</th>
-                                <td>{DatosClientes}</td>
-                                <td>Remodelacion</td>
-                                <td>Ave.Doc.Manuel Velazcos Suarez</td>
-                                <td>Leo.cm.04.07@gmail.com</td>
-                                <td>9161381271</td>
-                                <td><button type="button" className="btn btn-danger fa fa-align-left"></button></td>
-                                <td>$2500 MENSUALES</td>
-                                <td><button type="button" className="btn btn-danger fa fa-">Comprar</button></td>
+                                <th scope="row"></th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><button type="button" className="btn btn-success fa fa-align-left"></button></td>
+                                <td></td>
+                                <td><button type="button" className="btn btn-success fa fa-">Comprar</button></td>
                             </tr>
                         </tbody>
                     </table>                    

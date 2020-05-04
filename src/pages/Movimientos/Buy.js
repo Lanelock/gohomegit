@@ -5,20 +5,24 @@ class Buys extends Component {
         super(props)
 
         this.state = {
-
+            _id:'',
+Nombre: '',
+Tipo: '',
+Direccion:'',
+Correo:'',
+Telefono:'',
+Costo:''
         }
+
     }
 
     render() {
-        const ID = [1];
-        const Clientes = ['Leo'];
-        const NumID = ID.map((id) =>
-            <tr key={ID.toString()}>{id}</tr>);
-
-        const DatosClientes = Clientes.map((name) =>
-            <tr key={Clientes.toString()}>{name}</tr>);
         return (
             <div>
+                <form className="form-inline mt-3">
+                    <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Buscar</button>
+                </form>
                 <div class="container">
                     <table className="table table-sucess mt-1">
                         <thead className="thead-light">
@@ -36,14 +40,14 @@ class Buys extends Component {
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">{NumID}</th>
-                                <td>{DatosClientes}</td>
-                                <td>Remodelacion</td>
-                                <td>Ave.Doc.Manuel Velazcos Suarez</td>
-                                <td>Leo.cm.04.07@gmail.com</td>
-                                <td>9161381271</td>
+                                <tr />
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td><button type="button" className="btn btn-success fa fa-align-left"></button></td>
-                                <td>$2500 MENSUALES</td>
+                                <td></td>
                                 <td><button type="button" className="btn btn-success fa fa-ban"></button></td>
                             </tr>
                         </tbody>

@@ -12,15 +12,19 @@ class Usuario extends Component {
 
     render() {
         return (
+            <div>
             <form className="form-inline my-2 my-lg-0">
                 <div>
                     <img src="./logo.svg" class="rounded-circle float-left mt-5" alt="Usuario" />
                 </div>
-            <div >                   
-                <button type="button" class="btn btn-outline-light fas fa-users mt-5"></button>
-            </div>
+
+                
+          
             
             </form>
+                <hr />
+                <button type="button" class="btn btn-outline-light fas fa-users mt-5"></button>
+            </div>
         )
     }
 }

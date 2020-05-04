@@ -1,14 +1,7 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import {Link} from 'react-router-dom'
 
-import Home from '../pages/Home'
-import Buy from '../pages/Movimientos/Buy'
-import Sells from '../pages/Movimientos/Sells'
-import Remodelaciones from '../pages/Catalogo/Remodelaciones'
-import Solares from '../pages/Catalogo/Solares'
-import Terrenos from '../pages/Catalogo/Terrenos'
-import Viviendas from '../pages/Catalogo/Viviendas'
-import Notificaciónes from '../pages/Notificaciónes'
+
 import Usuarios from '../pages/Usuario'
 
 
@@ -24,7 +17,7 @@ class Header extends Component {
     render() {
 
         return (
-            <Router>
+            
                 <div className="pos-f-t">
 
                     <nav className="navbar navbar-dark bg-success">
@@ -33,16 +26,13 @@ class Header extends Component {
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="nav-item mt+4">
-                            <Link className="nav-link" to="/Notifiaciones">
+                        <Link className="nav-link" to="/Notificaciónes">
                                 <div className="fa fa-bell">
                                     <span className="badge badge-info">11</span>
                                 </div>
                             </Link>
                         </div>
-                        <form className="form-inline my-2 my-lg-0">
-                            <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-                        </form>
+                        
                     </nav>
 
 
@@ -99,20 +89,8 @@ class Header extends Component {
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <Switch>
-                            <Route path="/" exact component={Home} />
-                            <Route path="/Compras" exact component={Buy} />
-                            <Route path="/Ventas" exact component={Sells} />
-                            <Route path="/Remodelaciones" exact component={Remodelaciones} />
-                            <Route path="/Solares" exact component={Solares} />
-                            <Route path="/Terrenos" exact component={Terrenos} />
-                            <Route path="/Viviendas" exact component={Viviendas} />
-                            <Route path="/Notifiaciones" exact component={Notificaciónes} />
-                        </Switch>
-                    </div>
                 </div>
-            </Router>
+            
         )
     }
 }
