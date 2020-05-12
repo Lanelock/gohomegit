@@ -26,6 +26,7 @@ function App() {
         <Route path="/Viviendas" exact component={Viviendas} />
         <Route path="/Notificaciónes" exact component={Notificaciónes} />
         <Route path="/Formulario" exact component={Formulario} />
+        <Route path="/editar/:id" exact component={Formulario} />
 
     </div>
     </Router>

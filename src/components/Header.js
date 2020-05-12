@@ -20,7 +20,7 @@ class Header extends Component {
             
                 <div className="pos-f-t">
 
-                    <nav className="navbar navbar-dark bg-success">
+                    <form className="navbar navbar-dark bg-success">
                         
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
@@ -33,7 +33,7 @@ class Header extends Component {
                             </Link>
                         </div>
                         
-                    </nav>
+                </form>
 
 
                     <div className="collapse " id="navbarToggleExternalContent">
@@ -43,14 +43,14 @@ class Header extends Component {
                                     <div className="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                                                         
                                         <Usuarios/>
-                                        <div class="dropdown-divider"></div>
+                                        <div className="dropdown-divider"></div>
                                         
                                         <div className="btn-group">
                                             <Link className="btn btn-outline-light fa fa-home mt-1" to="/">Home <span className="sr-only">(current)</span></Link>
                                         </div>
 
                                         <div className="btn-group dropright ">
-                                            <i class="fas fa-money-check-alt"></i>
+                                            <i className="fas fa-money-check-alt"></i>
                                             <button type="button" className="btn btn-outline-light mt-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 Movimientos
   </button>
@@ -63,11 +63,11 @@ class Header extends Component {
                                         
 
                                         <div className="btn-group dropright">
-                                            <i class="fas fa-cash-register"></i>
-                                            <button type="button" class="btn btn-outline-light mt-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i className="fas fa-cash-register"></i>
+                                            <button type="button" className="btn btn-outline-light mt-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 Catalogo
   </button>
-                                            <div class="dropdown-menu">
+                                            <div className="dropdown-menu">
                                                 <Link className="dropdown-item" to="/Viviendas">Viviendas</Link>
                                                 <Link className="dropdown-item" to="/Terrenos">Terrenos</Link>
                                                 <Link className="dropdown-item" to="/Remodelaciones">Remodelaciones</Link>
