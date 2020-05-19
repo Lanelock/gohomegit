@@ -1,27 +1,27 @@
 import React, { Component } from 'react'
-
+import { MDBInput } from 'mdbreact';
+import '../css/Buttons.css'
 class Buys extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-            _id:'',
-Nombre: '',
-Tipo: '',
-Direccion:'',
-Correo:'',
-Telefono:'',
-Costo:''
+            _id: '',
+            Nombre: '',
+            Tipo: '',
+            Direccion: '',
+            Correo: '',
+            Telefono: '',
+            Costo: ''
         }
 
     }
 
     render() {
         return (
-            <div>
-                <form className="form-inline mt-3">
-                    <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Buscar</button>
+            <div className="container">
+                <form className="form-inline mt-3 container">
+                    <MDBInput className="text-white" label="Search" size="lg" />
                 </form>
                 <div class="container">
                     <table className="table table-sucess mt-1">
@@ -46,9 +46,23 @@ Costo:''
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><button type="button" className="btn btn-success fa fa-align-left"></button></td>
+                                <td>
+                                    <a href="#" className="btn-neon  fa fa-align-left  ">
+                                        <span id="span1"></span>
+                                        <span id="span2"></span>
+                                        <span id="span3"></span>
+                                        <span id="span4"></span>
+                                    </a>
+                                </td>
                                 <td></td>
-                                <td><button type="button" className="btn btn-success fa fa-ban"></button></td>
+                                <td>
+                                    <a href="#" className="btn-neon  fa fa-ban  ">
+                                        <span id="span1"></span>
+                                        <span id="span2"></span>
+                                        <span id="span3"></span>
+                                        <span id="span4"></span>
+                                    </a>
+                                </td>
                             </tr>
                         </tbody>
                     </table>

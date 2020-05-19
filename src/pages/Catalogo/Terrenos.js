@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { MDBInput } from 'mdbreact';
 class Terrenos extends Component {
     constructor(props) {
         super(props)
@@ -11,10 +11,9 @@ class Terrenos extends Component {
 
     render() {
         return (
-            <div>
-                <form className="form-inline mt-3">
-                    <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Buscar</button>
+            <div className="container">
+                <form className="form-inline mt-3 container">
+                    <MDBInput className="text-white" label="Search" size="lg" />
                 </form>
                 <div class="container">
                     <table className="table table-sucess mt-1">
@@ -39,9 +38,23 @@ class Terrenos extends Component {
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><button type="button" className="btn btn-success fa fa-align-left"></button></td>
+                                <td>
+                                    <a className="btn-neon  fa fa-align-left">
+                                        <span id="span1"></span>
+                                        <span id="span2"></span>
+                                        <span id="span3"></span>
+                                        <span id="span4"></span>
+                                    </a>
+                                </td>
                                 <td></td>
-                                <td><button type="button" className="btn btn-success fa fa-">Comprar</button></td>
+                                <td>
+                                    <a className="btn-neon  fas fa-shopping-cart">
+                                        <span id="span1"></span>
+                                        <span id="span2"></span>
+                                        <span id="span3"></span>
+                                        <span id="span4"></span>
+                                    </a>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
