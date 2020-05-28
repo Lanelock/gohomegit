@@ -23,7 +23,7 @@ class Buys extends Component {
                 <form className="form-inline mt-3 container">
                     <MDBInput className="text-white" label="Search" size="lg" />
                 </form>
-                <div class="container">
+                <div className="container">
                     <table className="table table-sucess mt-1">
                         <thead className="thead-light">
                             <tr>

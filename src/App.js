@@ -16,6 +16,7 @@ import Notificationtray from './pages/Notificationtray'
 import Formulario from './components/Formularios/Formulario'
 import Ussers from './components/Ussers'
 import FormUsser from './components/Formularios/FormUsser'
+import Usuarios from './pages/Usuarios';
 class App extends React.Component {
   state = {
     collapseID: ""
@@ -56,6 +57,7 @@ class App extends React.Component {
               <Route path="/Notificationtray" exact component={Notificationtray} />
               <Route path="/Formulario" exact component={Formulario} />
               <Route path="/editar/:id" exact component={Formulario} />
+              <Route path="/Usuarios" exact component={Usuarios}/>
             </Router>
           </MDBMask>
         </MDBView>

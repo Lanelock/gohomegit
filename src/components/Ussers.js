@@ -21,7 +21,7 @@ class Ussers extends Component {
                         className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5"
                     >
                         <h1 className="h1-responsive font-weight-bold">
-                            Registrate ahora!
+                            ¡Registrate ahora!
                   </h1>
                         <hr className="hr-light" />
                         <h6 className="mb-4">
@@ -52,18 +52,18 @@ class Ussers extends Component {
                                         <MDBInput
                                             className="white-text"
                                             iconClass="white-text"
-                                            label="Your name"
+                                            label="Introduce tu nombre"
                                             icon="user"
                                         />
                                         <MDBInput
                                             className="white-text"
                                             iconClass="white-text"
-                                            label="Your password"
+                                            label="Introduce tu contraseña"
                                             icon="lock"
                                             type="password"
                                         />
                                         <div className="text-center mt-4 ">
-                                            <Link to='/Home' >
+                                            <Link to='/Usuarios' >
                                                 <a className="btn-neon">
                                                     <span id="span1"></span>
                                                     <span id="span2"></span>
@@ -75,7 +75,7 @@ class Ussers extends Component {
                                         </div>
                                         <hr className='hr-light' />
                                         <p className="font-small white-text d-flex justify-content-center">
-                                            No tienes cuenta?
+                                            ¿No tienes cuenta?
         <Link to="/FormUsser" className="ml-1">Registrate</Link>
                                         </p>
                                     </div>

@@ -11,8 +11,8 @@ class Notificationtray extends Component {
         icon="envelope"
         iconClassName="green-text"
         title="Se realizo una Compra"
-        message="Realizastes una compra del usuario:____"
-        text="just now"
+        message="Realizaste una compra del usuario:____"
+        text="Just now"
       />
       <MDBNotification
         show
@@ -20,8 +20,8 @@ class Notificationtray extends Component {
         icon="envelope"
         iconClassName="yellow-text"
         title="Se realizo una adquisicion"
-        message="Se realizo una adquisicion del usuario:_____ del catalogo:_____"
-        text="just now"
+        message="Se realizó una adquisicion del usuario:_____ del catalogo:_____"
+        text="Just now"
       />
       <MDBNotification
         show
@@ -29,8 +29,8 @@ class Notificationtray extends Component {
         icon="envelope"
         iconClassName="blue-text"
         title="Se realizo un registro"
-        message="Se realizo una registro de ventas del usuario:____"
-        text="just now"
+        message="Se realizó una registro de ventas del usuario:____"
+        text="Just now"
       />
       </MDBContainer>
     );

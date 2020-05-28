@@ -89,13 +89,15 @@ class Formulario extends Component {
 
         return (
 
+           
             <MDBCol md="6">
+           
                 <form>
                     <div className="card">
                     <div className="header pt-3 purple-gradient">
               <MDBRow className="d-flex justify-content-center">
                 <h3 className="white-text mb-3 pt-3 font-weight-bold">
-                  Registro
+                  REGISTRO
                 </h3>
               </MDBRow>
             </div>
@@ -111,8 +113,8 @@ class Formulario extends Component {
                                 <MDBInput label="Your password" icon="lock" group type="password" validate className="white-text"/>
                                 
                             <div className="text-center">
-                                <Link to='/' >
-                                    <a className="btn-neon" onClick={this.onSubmit}>
+                                <Link to="/Usuarios" >
+                                    <a className="btn-neon">
                                         <span id="span1"></span>
                                         <span id="span2"></span>
                                         <span id="span3"></span>
@@ -124,7 +126,7 @@ class Formulario extends Component {
                             
                             <hr className='hr-light' />
                             <p className="font-small white-text d-flex justify-content-center">
-                                Ya tienes cuenta?
+                                ¿Ya tienes cuenta?
         <Link to="/" className="ml-1">Inicia sesion</Link>
                             </p>
                             </MDBCardBody>

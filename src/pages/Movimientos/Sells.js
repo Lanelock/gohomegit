@@ -46,7 +46,7 @@ class Sells extends Component {
                             Realizar nueva venta
                     </a>
                     </Link>
-                    <MDBInput className="text-white" label="Search" size="lg" />
+                    <MDBInput className="text-white" label="Buscar" size="lg" />
 
                 </form>
                 <div>
@@ -78,7 +78,8 @@ class Sells extends Component {
                                             <th><button type="button" className="btn btn-success fa fa-align-left">{ventas.Descripción}</button></th>
                                             <th>{ventas.Costo}</th>
                                             <th><Link role="button" className="btn btn-success fa fa-pencil" to={"/editar/" + ventas._id}></Link></th>
-                                            <th><button type="button" className="btn btn-success fa fa-trash" onClick={() => this.delventas(ventas._id)}></button></th>
+                                            <th><button type="button" className="btn btn-success fa fa-trash" 
+                                            onClick={() => this.delventas(ventas._id)}></button></th>
                                         </tr>
                                     )
                                 }

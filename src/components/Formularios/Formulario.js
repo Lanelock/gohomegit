@@ -58,9 +58,10 @@ class Formulario extends Component {
             Telefono: this.state.Telefono,
             Descripción: this.state.Descripción,
             Costo: this.state.Costo
-
-
         }
+        await Axios.post('gohome/agregar', newVentas)
+
+
 
         if (this.state.editing) {
             await Axios.put('gogome/actualizar/' + this.state._id, newVentas);
@@ -91,12 +92,13 @@ class Formulario extends Component {
                         <div className="form-row">
                             <div className="form-group col-md-6">
                                 <label htmlFor="inputName">Cliente</label>
-                                <input type="text" className="form-control" name="Nombre" value={this.state.Nombre} onChange={this.onInputChange} placeholder="Ingrese el nombre..." />
+                                <input type="text" className="form-control" name="Nombre" value={this.state.Nombre} 
+                                onChange={this.onInputChange} placeholder="Ingrese su nombre..." />
                             </div>
                         </div>
                         <div className="form-group">
                             <div className="row">
-                                <legend className="col-form-label col-sm-2 pt-0">Tipo de area</legend>
+                                <legend className="col-form-label col-sm-2 pt-0">Tipo de Área</legend>
                                 <div className="col-sm-10">
                                     <div className="form-check">
                                         <input className="form-check-input" type="radio" name="Tipo" id="gridRadios1" checked={this.state.Tipo} onChange={this.onInputChecked} />
@@ -127,23 +129,28 @@ class Formulario extends Component {
                         </div>
                         <div className="form-group col-md-6">
                             <label htmlFor="inputAddress">Dirección</label>
-                            <input type="text" className="form-control" name="Dirección" value={this.state.Dirección} onChange={this.onInputChange} placeholder="1234 Main St" />
+                            <input type="text" className="form-control" name="Dirección" value={this.state.Dirección} 
+                            onChange={this.onInputChange} placeholder="Ingrese la dirección del área..." />
                         </div>
                         <div className="form-group col-md-6">
                             <label htmlFor="inputCorreo">Correo</label>
-                            <input type="text" className="form-control" name="Correo" value={this.state.Correo} onChange={this.onInputChange} placeholder="correo@gmail.com" />
+                            <input type="text" className="form-control" name="Correo" value={this.state.Correo} 
+                            onChange={this.onInputChange} placeholder="sucorreo@dominio.com" />
                         </div>
                         <div className="form-group col-md-6">
                             <label htmlFor="inputTelefono">Telefono</label>
-                            <input type="text" className="form-control" name="Telefono" value={this.state.Telefono} onChange={this.onInputChange} placeholder="000-000-000" />
+                            <input type="text" className="form-control" name="Telefono" value={this.state.Telefono} 
+                            onChange={this.onInputChange} placeholder="Introducir su número telefónico (sólo números)..." />
                         </div>
                         <div className="form-group col-md-6">
                             <label htmlFor="exampleFormControlTextarea1">Descripción</label>
-                            <textarea className="form-control" name="Descripción" value={this.state.Descripción} onChange={this.onInputChange} rows="3" placeholder="Ingrese breve descripción del area..."></textarea>
+                            <textarea className="form-control" name="Descripción" value={this.state.Descripción} 
+                            onChange={this.onInputChange} rows="3" placeholder="Ingrese breve descripción del área..."></textarea>
                         </div>
                         <div className="form-group col-md-6">
                             <label htmlFor="inputEmail4">Costo</label>
-                            <input type="email" className="form-control" name="Costo" value={this.state.Costo} onChange={this.onInputChange} placeholder="Ingrese el costo..." />
+                            <input type="email" className="form-control" name="Costo" value={this.state.Costo} 
+                            onChange={this.onInputChange} placeholder="Ingrese el costo..." />
                         </div>
                         <Link to='/Ventas'>
                             <a className="btn-neon">
